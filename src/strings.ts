@@ -1,0 +1,236 @@
+export const STRINGS = {
+  tr: {
+    app_title: '1 SANİYE',
+    app_tagline: 'Rap şarkısını 1 saniyede tahmin et',
+    app_subtitle: 'Türkçe Rap Heardle',
+    footer_disclaimer: 'Önizlemeler Apple (iTunes) tarafından sağlanmaktadır. Hiçbir sanatçı veya plak şirketiyle resmi bir bağı yoktur.',
+
+    // Modes
+    mode_easy: 'Kolay',
+    mode_easy_desc: 'Popüler parçalar, 4 şıklı seçenek, 6 deneme',
+    mode_medium: 'Orta',
+    mode_medium_desc: 'Orta popülerlik, arama kutusuyla tahmin, 5 deneme',
+    mode_hard: 'Zor',
+    mode_hard_desc: 'Underground rap, rastgele kesit başlangıcı, serbest yazım',
+    mode_daily: 'Günlük',
+    mode_daily_desc: 'Her gün herkes için aynı özel Türkçe rap parçası',
+
+    daily_played: 'Bugün Oynandı',
+    daily_play_now: "Günün Şarkısını Oyna",
+    attempts_label: 'deneme',
+    songs_in_pool: 'şarkı',
+    best_score: 'En Yüksek',
+
+    // Game screen
+    back_to_menu: 'Menü',
+    potential_score: 'Olası Puan',
+    streak_count: 'Seri',
+    skip_button: 'Pas Geç',
+    skip_with_time: 'Pas Geç (+{time}s)',
+    submit_button: 'Tahmin Et',
+    search_placeholder: 'Şarkı veya sanatçı adı ara...',
+    free_input_placeholder: 'Şarkı adını yaz...',
+    no_results: 'Eşleşen şarkı bulunamadı',
+    type_to_search: 'Aramak için en az 1 harf yazın...',
+    skipped_row: 'Pas Geçildi',
+    empty_attempt: 'Deneme',
+
+    // Hints
+    hint_button: 'İpucu Al (-%15 Puan)',
+    hints_exhausted: 'Tüm İpuçları Açıldı',
+    hint_genres_label: 'Müzik Türü',
+    hint_year_label: 'Çıkış Yılı',
+    hint_artist_first_letter: 'Sanatçı İlk Harfi',
+
+    // Result screen
+    win_title: 'TEBRİKLER! BİLDİN!',
+    loss_title: 'BU SEFER OLMADI!',
+    win_subtitle_first: 'Efsanevi! İlk saniyeden tanıdın!',
+    win_subtitle: '{attempt}. denemede doğru bildin.',
+    loss_subtitle: 'Doğru cevap yukarıda. Bir sonrakine!',
+    next_song: 'Sıradaki Şarkı',
+    share_result: 'Sonucu Paylaş',
+    result_copied: 'Sonuç panoya kopyalandı!',
+    score_breakdown: 'Puan Detayı',
+    base_points: 'Temel Puan',
+    mode_multiplier: 'Mod Çarpanı',
+    hint_penalty: 'İpucu Kesintisi',
+    streak_bonus: 'Seri Bonusu',
+    total_score: 'Kazanılan Puan',
+    session_score: 'Oturum Toplamı',
+    full_preview: 'Tam Kesiti Dinle (30 sn)',
+    next_daily_countdown: 'Yeni Günlük Şarkıya Kalan Süre',
+
+    // How to play modal
+    how_to_title: 'Nasıl Oynanır?',
+    how_to_rule_1: 'Her tur başında şarkının başından çok kısa bir kesit (1 saniye) dinlersin.',
+    how_to_rule_2: 'Her yanlış tahminde veya "Pas Geç" dediğinde şarkının daha uzun bir bölümü açılır.',
+    how_to_rule_3: 'Kolay modda 4 seçenekten birini seçersin. Orta ve Günlük modda arama yaparak şarkıyı seçersin. Zor modda ise serbestçe yazıp şarkıyı bilmeye çalışırsın (kesit şarkının ortasından rastgele başlayabilir!).',
+    how_to_rule_4: 'Takıldığında İpucu butonuna basarak tür, yıl ve ilk harf ipuçlarını açabilirsin (her ipucu puanı %15 azaltır).',
+    how_to_close: 'Anladım, Başla!',
+
+    // Stats modal
+    stats_title: 'İstatistikler',
+    stat_played: 'Oynanan',
+    stat_win_rate: 'Kazanma',
+    stat_streak: 'Mevcut Seri',
+    stat_max_streak: 'En İyi Seri',
+    stat_high_score: 'En Yüksek Skor',
+    guess_distribution: 'Tahmin Dağılımı',
+    reset_stats: 'İstatistikleri Sıfırla',
+    reset_stats_confirm: 'Tüm modlardaki istatistiklerinizi sıfırlamak istediğinize emin misiniz? Bu işlem geri alınamaz.',
+    stats_reset_success: 'İstatistikler sıfırlandı.',
+
+    // Settings modal
+    settings_title: 'Ayarlar',
+    setting_volume: 'Ses Seviyesi',
+    setting_autoplay: 'Tahminden sonra otomatik çal',
+    setting_autoplay_desc: 'Yanlış tahmin veya pas sonrası yeni kesiti hemen oynatır',
+    setting_language: 'Dil / Language',
+    setting_reduce_motion: 'Hareketi Azalt (Reduce Motion)',
+    setting_reduce_motion_desc: 'Parıltı ve konfeti animasyonlarını kapatır',
+    setting_reload_songs: 'Şarkı Listesini Yeniden Yükle',
+    setting_reload_songs_desc: 'Önbelleğe alınan şarkıları temizler ve dosyayı baştan okur',
+    setting_custom_json: 'Farklı songs.json Yükle',
+    close: 'Kapat',
+
+    // Song Loader / Uploader
+    uploader_title: 'Şarkı Listeni Yükle',
+    uploader_desc: 'Oynamak için bir songs.json dosyası yükleyebilir veya örnek Türkçe Rap listesiyle devam edebilirsin.',
+    uploader_drag_text: 'songs.json dosyasını buraya sürükle bırak',
+    uploader_or: 'veya',
+    uploader_browse: 'Dosya Seç (.json)',
+    uploader_demo_button: 'Örnek Türkçe Rap Listesiyle Başla (470+ Şarkı)',
+    uploader_loading: 'Şarkılar yükleniyor ve doğrulanıyor...',
+    uploader_success: '{count} adet geçerli Türkçe Rap şarkısı yüklendi!',
+    uploader_error: 'Geçersiz JSON dosyası veya uyumsuz şarkı formatı.',
+    demo_badge: 'DEMO MODU',
+    demo_notice: 'Şu an örnek veri kullanılıyor. Ses çalınamayabilir.',
+
+    // Toast & Alerts
+    audio_error_skipped: 'Bu şarkının kesiti yüklenemedi, yeni bir şarkı seçildi.',
+    audio_loading: 'Kesit yükleniyor...',
+    audio_play: 'Oynat',
+    audio_stop: 'Durdur',
+    copy_success: 'Panoya kopyalandı!',
+  },
+
+  en: {
+    app_title: '1 SANİYE',
+    app_tagline: 'Guess the Turkish rap song in 1 second',
+    app_subtitle: 'Turkish Rap Heardle',
+    footer_disclaimer: 'Audio previews provided by Apple (iTunes). Not affiliated with any artist or record label.',
+
+    // Modes
+    mode_easy: 'Easy',
+    mode_easy_desc: 'Popular tracks, 4 multiple choice buttons, 6 attempts',
+    mode_medium: 'Medium',
+    mode_medium_desc: 'Medium popularity, search autocomplete, 5 attempts',
+    mode_hard: 'Hard',
+    mode_hard_desc: 'Underground rap, random clip offset, free text guessing',
+    mode_daily: 'Daily',
+    mode_daily_desc: 'A synchronized Turkish rap track for everyone every day',
+
+    daily_played: 'Played Today',
+    daily_play_now: "Play Today's Song",
+    attempts_label: 'attempts',
+    songs_in_pool: 'songs',
+    best_score: 'Best',
+
+    // Game screen
+    back_to_menu: 'Menu',
+    potential_score: 'Potential Score',
+    streak_count: 'Streak',
+    skip_button: 'Skip',
+    skip_with_time: 'Skip (+{time}s)',
+    submit_button: 'Submit Guess',
+    search_placeholder: 'Search song or artist...',
+    free_input_placeholder: 'Type song title...',
+    no_results: 'No matching songs found',
+    type_to_search: 'Type at least 1 character...',
+    skipped_row: 'Skipped',
+    empty_attempt: 'Attempt',
+
+    // Hints
+    hint_button: 'Get Hint (-15% Score)',
+    hints_exhausted: 'All Hints Revealed',
+    hint_genres_label: 'Genre',
+    hint_year_label: 'Release Year',
+    hint_artist_first_letter: 'Artist First Letter',
+
+    // Result screen
+    win_title: 'NICE! YOU GOT IT!',
+    loss_title: 'OUT OF ATTEMPTS!',
+    win_subtitle_first: 'Legendary! Guessed on the very first second!',
+    win_subtitle: 'Solved in {attempt} attempts.',
+    loss_subtitle: 'The answer is shown above. Better luck next time!',
+    next_song: 'Next Song',
+    share_result: 'Share Result',
+    result_copied: 'Result copied to clipboard!',
+    score_breakdown: 'Score Breakdown',
+    base_points: 'Base Points',
+    mode_multiplier: 'Mode Multiplier',
+    hint_penalty: 'Hint Penalty',
+    streak_bonus: 'Streak Bonus',
+    total_score: 'Total Score',
+    session_score: 'Session Total',
+    full_preview: 'Play Full Preview (30s)',
+    next_daily_countdown: 'Next Daily Song In',
+
+    // How to play modal
+    how_to_title: 'How to Play',
+    how_to_rule_1: 'At the start of each round, you hear a very short clip (1 second) of a Turkish rap song.',
+    how_to_rule_2: 'Each wrong guess or skip unlocks a longer preview segment.',
+    how_to_rule_3: 'Easy mode offers 4 choice buttons. Medium and Daily use autocomplete search. Hard mode requires free typing (and clips may start anywhere!).',
+    how_to_rule_4: 'Stuck? Press Hint to reveal genres, release year, and artist first letter (-15% score per hint).',
+    how_to_close: 'Got it, Let’s Play!',
+
+    // Stats modal
+    stats_title: 'Statistics',
+    stat_played: 'Played',
+    stat_win_rate: 'Win %',
+    stat_streak: 'Current Streak',
+    stat_max_streak: 'Max Streak',
+    stat_high_score: 'High Score',
+    guess_distribution: 'Guess Distribution',
+    reset_stats: 'Reset Stats',
+    reset_stats_confirm: 'Are you sure you want to reset all game statistics? This cannot be undone.',
+    stats_reset_success: 'Statistics reset.',
+
+    // Settings modal
+    settings_title: 'Settings',
+    setting_volume: 'Audio Volume',
+    setting_autoplay: 'Auto-play after guess',
+    setting_autoplay_desc: 'Automatically plays the newly unlocked clip after wrong guess or skip',
+    setting_language: 'Language / Dil',
+    setting_reduce_motion: 'Reduce Motion',
+    setting_reduce_motion_desc: 'Disables glow pulses and confetti animations',
+    setting_reload_songs: 'Reload Song List',
+    setting_reload_songs_desc: 'Clears the cached songs and refetches the list',
+    setting_custom_json: 'Load another songs.json',
+    close: 'Close',
+
+    // Song Loader / Uploader
+    uploader_title: 'Load Your Song List',
+    uploader_desc: 'Drop in your custom songs.json file or proceed with the curated Turkish Rap library.',
+    uploader_drag_text: 'Drag & drop songs.json here',
+    uploader_or: 'or',
+    uploader_browse: 'Browse File (.json)',
+    uploader_demo_button: 'Start with Curated Turkish Rap List (470+ Songs)',
+    uploader_loading: 'Loading and validating songs...',
+    uploader_success: 'Successfully loaded {count} valid songs!',
+    uploader_error: 'Invalid JSON file or incompatible song format.',
+    demo_badge: 'DEMO MODE',
+    demo_notice: 'Currently running with mock songs. Audio playback may be unavailable.',
+
+    // Toast & Alerts
+    audio_error_skipped: 'Audio clip could not be loaded. Picked another song.',
+    audio_loading: 'Loading audio...',
+    audio_play: 'Play',
+    audio_stop: 'Stop',
+    copy_success: 'Copied to clipboard!',
+  },
+};
+
+export type Language = 'tr' | 'en';
+export type StringKey = keyof typeof STRINGS['tr'];
